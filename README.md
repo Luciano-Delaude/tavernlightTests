@@ -27,7 +27,17 @@ Changes made to improve the function:
 - Utilized the `getName()` method (assuming it exists) to retrieve the name of the player object.
 - Added a return statement to indicate whether the member was found and removed.
 
-## Q4: Memory Management with std::unique_ptr
+## Q4: Memory Management with Deletion
 
-This approach utilizes `std::unique_ptr` to automatically manage memory allocated for the `Player` object. It ensures proper deallocation when it goes out of scope, whether due to an early return or at the end of the method. This simplifies memory management and reduces the risk of memory leaks.
+In the provided method `Game::addItemToPlayer`, there's a potential memory leak due to memory allocation using the `new` keyword without proper deallocation if the player is not found in `g_game.getPlayerByName(recipient)`.
+
+To fix the memory leak, the following modification was made:
+
+- **Deletion with the `delete` keyword:** Whenever a new `Player` object is created but not found, the `delete` keyword is used to release the allocated memory, ensuring no memory leaks occur.
+
+Another alternative, is to use the `std::unique_ptr`. This ensures proper deallocation when it goes out of scope, whether due to an early return or at the end of the method.
+
+
+
+
 
