@@ -1,0 +1,10 @@
+Module
+  name: game_customWindows
+  description: Displays custom window
+  author: flabord
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  dependencies: [ game_interface ]
+  scripts: [ customWindows ]
+  @onLoad: init()
+  @onUnload: terminate()

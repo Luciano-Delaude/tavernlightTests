@@ -1,30 +1,25 @@
-# Game Solutions Repository
+# Custom Windows Module for OTClient
 
-Welcome to the Game Solutions repository!
+## Introduction
 
-## Overview
-
-This repository serves as a collection of solutions for game-related tests, focusing on functionality implementation for TFS and OTClient games. It includes implementations and improvements to meet the requirements outlined in the tests.
-
-## Purpose
-
-The primary objective of this repository is to provide solutions for game-related tests received, ensuring the functionality, reliability, and quality of TFS and OTClient games.
-
-## Contents
-
-The repository contains implementations of various functionalities, optimizations, and fixes tailored for TFS and OTClient games. These solutions aim to meet the specific requirements outlined in the tests provided.
-
-## Contributing
-
-Contributions to this repository are welcome! Whether it's adding new functionality, optimizing existing implementations, or fixing bugs, your contributions help enhance the quality and reliability of TFS and OTClient games.
+This test isn't fully completed, as there isn't a reproduction of the functionality of the window generated. However, to generate custom client functionality, it's necessary to create the following files related to that custom functionality: otmod, otui, and lua files.
 
 ## Getting Started
 
-To get started with the solutions provided in this repository, clone it to your local machine and follow the instructions provided in the respective files. Make sure to review the implementations and test them according to the requirements outlined in the tests.
+To begin, follow these steps:
 
-## Feedback
+1. Navigate to the directory `otclient/modules/`.
+2. Create a new folder for your custom module. For example, `game_customWindows`.
+3. Within this folder, place your otmod, otui, and lua files related to your custom window functionality.
 
-Feedback and suggestions for improving the solutions or the repository structure are appreciated. Feel free to open an issue or submit a pull request with your ideas and contributions.
+## Compiling
 
-Happy coding, and thank you for your contributions to game development!
+After adding your custom module files, compile the client. Once compiled, you'll be able to see the loaded modules through the GUI of the game, and your generated module will be among them.
 
+## Issue
+
+The functionality may not be fully functional due to the inability to call the customWindow from the client. This issue arises from the difficulty in accessing the game modules from the scripts. Despite attempts to utilize calls to `g_ui` in the C++ code, the accessors to these modules, it has not been successful.
+
+## Contributing
+
+Contributions to resolve this issue are welcome. If you have any insights or solutions, feel free to contribute.

@@ -1,0 +1,28 @@
+
+
+CustomWindow < MainWindow
+  id: customWindow
+  size: 300 280
+
+  Label
+    id: description
+    anchors.top: parent.top
+    anchors.left: parent.left 
+    margin-left: 5
+    margin-top: 5
+    width: 130
+
+  Button
+    id: okButton
+    !text: tr('Ok')
+    anchors.bottom: parent.bottom
+    anchors.right: next.left
+    margin-right: 10
+    width: 60
+
+  Button
+    id: cancelButton
+    !text: tr('Cancel')
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    width: 60
