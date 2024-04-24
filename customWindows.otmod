@@ -3,8 +3,8 @@ Module
   description: Displays custom window
   author: flabord
   website: https://github.com/edubart/otclient
-  sandboxed: true
-  dependencies: [ game_interface ]
-  scripts: [ customWindows ]
-  @onLoad: init()
-  @onUnload: terminate()
+  sandboxed: true - Sandboxed to be contained in the customWindow scope
+  dependencies: [ game_interface ] 
+  scripts: [ customWindows ] - Script to be excecuted when modules initialized
+  onLoad: init() - Function called when the module is loaded
+  onUnload: terminate() - Function called when the module is unloaded

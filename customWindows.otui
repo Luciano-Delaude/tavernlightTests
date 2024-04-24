@@ -1,10 +1,8 @@
-
-
-CustomWindow < MainWindow
+CustomWindow < MainWindow  - Generating customWindow module from MainWindow
   id: customWindow
   size: 300 280
 
-  Label
+  Label - Label to be shown at the top of the customWindow
     id: description
     anchors.top: parent.top
     anchors.left: parent.left 
