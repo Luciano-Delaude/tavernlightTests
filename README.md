@@ -13,9 +13,5 @@ This spell will only work with the druid and sorcerer vocations because it was r
 ## Usage
 After installation, players with druid or sorcerer vocations can cast the 'icenado' spell by typing 'exevo nado' in the text input client.
 
-## Additional Notes
-- Make sure to configure your server settings to allow custom spells before using this spell.
-- This spell is intended for educational or testing purposes and may require further customization for use in a production environment.
-
 ## Credits
-This spell was created by [Your Name or Organization].
+This spell was created by Flabord
