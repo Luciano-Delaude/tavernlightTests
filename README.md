@@ -1,30 +1,21 @@
-# Game Solutions Repository
+# Icenado Spell README
 
-Welcome to the Game Solutions repository!
+## Introduction
+The following file allows you to create the 'icenado' spell, which was required for Question 5 of the test. This file, when placed in the `forgottenserver/data/scripts/spells` directory, enables the generation of a spell with the words 'exevo nado' introduced through the text input client.
 
-## Overview
+## Compatibility
+This spell will only work with the druid and sorcerer vocations because it was registered for those two.
 
-This repository serves as a collection of solutions for game-related tests, focusing on functionality implementation for TFS and OTClient games. It includes implementations and improvements to meet the requirements outlined in the tests.
+## Installation
+1. Download the `icenado.lua` file.
+2. Place the `icenado.lua` file in the `forgottenserver/data/scripts/spells` directory of your Forgotten Server installation.
 
-## Purpose
+## Usage
+After installation, players with druid or sorcerer vocations can cast the 'icenado' spell by typing 'exevo nado' in the text input client.
 
-The primary objective of this repository is to provide solutions for game-related tests received, ensuring the functionality, reliability, and quality of TFS and OTClient games.
+## Additional Notes
+- Make sure to configure your server settings to allow custom spells before using this spell.
+- This spell is intended for educational or testing purposes and may require further customization for use in a production environment.
 
-## Contents
-
-The repository contains implementations of various functionalities, optimizations, and fixes tailored for TFS and OTClient games. These solutions aim to meet the specific requirements outlined in the tests provided.
-
-## Contributing
-
-Contributions to this repository are welcome! Whether it's adding new functionality, optimizing existing implementations, or fixing bugs, your contributions help enhance the quality and reliability of TFS and OTClient games.
-
-## Getting Started
-
-To get started with the solutions provided in this repository, clone it to your local machine and follow the instructions provided in the respective files. Make sure to review the implementations and test them according to the requirements outlined in the tests.
-
-## Feedback
-
-Feedback and suggestions for improving the solutions or the repository structure are appreciated. Feel free to open an issue or submit a pull request with your ideas and contributions.
-
-Happy coding, and thank you for your contributions to game development!
-
+## Credits
+This spell was created by [Your Name or Organization].
